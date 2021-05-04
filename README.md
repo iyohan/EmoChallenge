@@ -1,6 +1,7 @@
 # EmoChallenge
-### [SIT32002-01] 2021 HCI Team Project "Emo Challenge"  
+[SIT32002-01] 2021 HCI Team Project "Emo Challenge"  
 Created by: John Lee, Hayul Lee, Pyeongan Kim, Juyeon Lee
+
 ---
 
-This is a team project for 2021'Human Computer Interaction' class. 
+A simple game using face-detection API from Naver Clova and ...
