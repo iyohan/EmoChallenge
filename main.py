@@ -9,8 +9,8 @@ def main():
     end_screen = EndScreen()
     
     # testing을 0으로 주면 바로 바로 캡쳐가 됨.
-    main_screen.testing = 1
-    fever_screen.testing = 1
+    main_screen.testing = 0
+    fever_screen.testing = 0
     
     # game
     main_screen.character, main_screen.difficulty, main_screen.music = start_screen.run()
