@@ -53,7 +53,8 @@ $ python main.py
 
 
 ## 3. System Design
-!["fever_screen"](./resource/Design.bmp)
+
+!["system_design"](./readme_pics/system_design_ver1.png)
 
 
 ## 4. Game Progress
@@ -61,19 +62,21 @@ $ python main.py
 ### 4-1. START Game (select character, difficulty and music)
 Users can select character, levels of difficulty, and music from the game’s start screen. It allows users to enter information that suits their preferences and play the game they want according to their personal preferences. After selecting the options users want, click the ‘GAME START’ button to start the game. 
 
- !["Start_screen"](./resource/start_screen.bmp)
- 
+ !["start_screen"](./readme_pics/start_screen.png)
+
 ### 4-2. MAIN GAME
 When the game starts, face with various emotions fall from top to bottom. At this time, if you make an expression that fits this emotion and bring it to the corresponding position, it will be evaluated how exact it is. And added to the score according to the emotion accuracy in the Naver api (face recognition api) 
- !["Main_screen"](./resource/main_screen.bmp)
- 
+ !["main_screen"](./readme_pics/main_screen.png)
+
 ### 4-3. MINI GAME (FEVER MISSION)
 if the score exceeds 10 points, you will face the FEVER MISSION. This mission is to decide whether to go to FEVER TIME. If you fail, you will return to the game again but if you succeed, you can enter FEVER TIME where you can get extra points. There are three FEVER MISSION and it comes randomly.
 
-!["fever_screen"](./resource/cham.bmp)
+!["mini_game_cham"](./readme_pics/mini_game_cham.png)
 
 ### 4-4. FEVER TIME MODE
 If you come to Fever mode after a Fever mission, you can get twice the score if you express your emotions faster and make the right expression. The Fever game lasts for 30 seconds and returns to the original game after the Fever game.
+
+!["fever_screen"](./readme_pics/fever_screen.png)
 
 ## 5. Expectation effectiveness
 - Evolve into a game applicable to existing video conferencing platforms
