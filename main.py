@@ -16,23 +16,21 @@ def main():
     main_screen.character, main_screen.difficulty, main_screen.music = start_screen.run()
     fever_screen.character = main_screen.character
 
-    score = 0
     while(1):
         main_ret = main_screen.run()
-        score = main_screen.score
         if main_ret == 'enter_fever':
             mini_ret = mini_cham_screen.run()
             if mini_ret == 'enter_fever':
-                fever_screen.score = score
+                fever_screen.score = main_screen.score
                 fever_ret = fever_screen.run()
-                score = fever_screen.score
+                main_screen.score = fever_screen.score
                 if fever_ret == 'finish':
                     break
             elif mini_ret == 'finish':
                 break
         elif main_ret == 'finish':
             break
-    end_screen.score = score
+    end_screen.score = max(main_screen.score, fever_screen.score)
     end_screen.run()
     
 if __name__ == '__main__':

@@ -647,19 +647,19 @@ class MiniChamScreen(Game):
                             self.yaw, self.pitch = parseJson(response, target='face_direction')
                             if self.hand_direction == 'left':
                                 if self.yaw >= 0.5:
-                                    hit += 1
-                                else:
                                     miss += 1
+                                else:
+                                    hit += 1
                             elif self.hand_direction == 'right':
                                 if self.yaw <= -0.5:
-                                    hit += 1
-                                else:
                                     miss += 1
+                                else:
+                                    hit += 1
                             elif self.hand_direction == 'front':
                                 if self.yaw > -0.5 and self.yaw < 0.5:
-                                    hit += 1
-                                else:
                                     miss += 1
+                                else:
+                                    hit += 1
                         except Exception as ex:
                             print(f'{ex}')
                             pass
@@ -695,19 +695,19 @@ class MiniChamScreen(Game):
                     self.yaw, self.pitch = parseJson(response, target='face_direction')
                     if self.hand_direction == 'left':
                         if self.yaw >= 0.5:
-                            hit += 1
-                        else:
                             miss += 1
+                        else:
+                            hit += 1
                     elif self.hand_direction == 'right':
                         if self.yaw <= -0.5:
-                            hit += 1
-                        else:
                             miss += 1
+                        else:
+                            hit += 1
                     elif self.hand_direction == 'front':
                         if self.yaw > -0.3 and self.yaw < 0.3:
-                            hit += 1
-                        else:
                             miss += 1
+                        else:
+                            hit += 1
                 except Exception as ex:
                     print(f'{ex}')
                     miss += 1
